@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/gymProject_production/assets/vite-Cfu_Gjo5.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <link rel="icon" type="image/png" href="./icon-512.png" />
+    <!-- user-scalable=no: в приложении случайный пинч-зум только ломает вёрстку. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
     />
+    <!--
+      Font Awesome подключается импортом в main.jsx, а не с CDN: приложение
+      должно рисовать иконки без сети. Версия пакета закреплена на 6.5.0 —
+      той же, что грузилась с CDN, иначе часть иконок сменила бы начертание.
+    -->
     <title>gymproject</title>
-    <script type="module" crossorigin src="/gymProject_production/assets/index-Dsd7Rfrz.js"></script>
-    <link rel="stylesheet" crossorigin href="/gymProject_production/assets/index-C0x_8k6h.css">
+    <script type="module" crossorigin src="./assets/index-C79khpMA.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DDxu8cTl.css">
   </head>
   <body>
     <div id="root"></div>
